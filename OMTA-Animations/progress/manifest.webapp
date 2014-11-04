@@ -1,0 +1,9 @@
+{
+  "name" : "Progress Animation",
+  "description" : "Progress Animation",
+  "launch_path" : "/index.html",
+  "developer": {
+    "name" : "Mozilla"
+  },
+  "default_locale" : "en"
+}

@@ -1,0 +1,9 @@
+{
+  "name" : "Pulse Animation",
+  "description" : "Pulse Animation",
+  "launch_path" : "/index.html",
+  "developer": {
+    "name" : "Mozilla"
+  },
+  "default_locale" : "en"
+}

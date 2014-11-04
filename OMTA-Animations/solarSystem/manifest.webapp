@@ -1,0 +1,9 @@
+{
+  "name" : "Solar System",
+  "description" : "Solar System",
+  "launch_path" : "/index.html",
+  "developer": {
+    "name" : "Mozilla"
+  },
+  "default_locale" : "en"
+}

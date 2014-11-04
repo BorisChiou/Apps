@@ -1,0 +1,9 @@
+{
+  "name" : "ProgressBar Animation",
+  "description" : "ProgressBar Animation",
+  "launch_path" : "/index.html",
+  "developer": {
+    "name" : "Mozilla"
+  },
+  "default_locale" : "en"
+}
