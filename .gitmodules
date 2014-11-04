@@ -1,3 +1,6 @@
 [submodule "OMTA-Examples"]
 	path = OMTA-Examples
 	url = git@github.com:BorisChiou/OMTA-Examples.git
+[submodule "OMTA-Animations/mario/pure-css-super-mario"]
+	path = OMTA-Animations/mario/pure-css-super-mario
+	url = git@github.com:BorisChiou/pure-css-super-mario.git
