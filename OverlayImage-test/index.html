@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Tv layer test</title>
+
+    <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        /*background-color: pink;*/
+        overflow: hidden;
+      }
+
+      .tv_layer {
+      animation: mymove 1s infinite;
+      }
+
+      @keyframes mymove {
+        from {left: 0px;}
+        to {left: 1px;}
+      }
+    </style>
+
+    <script src="js/template.js"></script>
+    <script type="text/javascript">
+    function test() {
+        dump("[chiajung] Set TVSrc");
+        var element = document.getElementById("vid");
+
+        element.mozTVSrc = 5;
+        element.SetAttribute("mozTVSrc", 5);
+    }
+
+    function recover() {
+        dump("[chiajung] set video src");
+        var element = document.getElementById("vid");
+        element.src = "mozilla.webm";
+        element.SetAttribute("src", "mozilla.webm");
+    }
+    window.addEventListener('load', startup);
+    </script>
+  </head>
+
+  <body>
+
+<center>
+    <p>Image Layer test for TV</p>
+    <!-- <div><img src="style/icons/tv.png"/></div> -->
+    <div id="tv_screen" class="tv_layer"><video id="vid" width="480" src="mozilla.webm" autoplay/></div>
+    <br>
+    <button id="t1" style="height:30px;width:200px;font-size:large" onclick="test()">test tv path</button>
+    <p></p>
+    <button id="t2" style="height:30px;width:200px;font-size:large" onclick="recover()">recover</button>
+
+</center>
+
+  </body>
+</html>

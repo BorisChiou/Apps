@@ -1,0 +1,23 @@
+{
+  "name": "TV-Layer-Test-1",
+  "description": "TV Web app test-1",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "The Gaia Team",
+    "url": "https://github.com/mozilla-b2g/gaia"
+  },
+  "locales": {
+    "en-US": {
+      "name": "TV layer test",
+      "description": "TV test"
+    }
+  },
+  "default_locale": "en-US",
+  "icons": {
+    "129": "/style/icons/tv.png"
+  },
+  "orientation": "portrait",
+  "permissions": {
+    "settings":{ "access": "readwrite" }
+  }
+}
