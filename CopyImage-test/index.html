@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title>Copy Image Test</title>
+
+    <style>
+      body {
+        border: 1px solid black;
+      }
+    </style>
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="app.js" defer></script>
+
+  </head>
+
+  <body>
+    <!-- This code is in the public domain. Enjoy! -->
+    <h1>CopyImage test</h1>
+    <div>
+      <h2>Photos</h2>
+      <img src="./pics/test2.jpg" alt="bemo.jpg"></img>
+      <a href="https://en.wikipedia.org/wiki/Macintosh">
+        <img src="./pics/test.jpg" alt="clock_image.jpg"></img>
+      </a>
+      <img alt="The Witcher EU box.jpg" src="https://upload.wikimedia.org/wikipedia/en/b/b0/The_Witcher_EU_box.jpg" \
+      data-file-width="250" data-file-height="296" height="296" width="250"></img>
+    </div>
+    <div contextmenu="mymenu" style="background: yellow; border: 1px solid black;">
+      <h2>With contextmenu</h2>
+      <ul>
+        <li><a href="http://www.w3.org/TR/clipboard-apis/">clipboard-apis</a></li>
+      </ul>
+      <img src="./pics/test3.jpg" alt="honey.jpg"></img>
+      <menu type="context" id="mymenu">
+        <menuitem label="Refresh" onclick="window.location.reload();"></menuitem>
+        <menu label="Share on...">
+          <menuitem label="Twitter" onclick="consloe.log('[Boris] click twitter');"></menuitem>
+          <menuitem label="Facebook" onclick="console.log('[Boris] click facebook');"></menuitem>
+        </menu>
+        <menuitem label="Email This Page" onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+      </menu>
+    </div>
+    <hr>
+    <div>
+      <h2>Content Editable</h2>
+      <div contentEditable="true" style="height: 400px;">
+        <p>This text can be edited by the user.</p>
+      </div>
+    </div>
+  </body>
+
+</html>
