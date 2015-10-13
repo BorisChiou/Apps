@@ -4,3 +4,6 @@
 [submodule "OMTA-Animations/mario/pure-css-super-mario"]
 	path = OMTA-Animations/mario/pure-css-super-mario
 	url = git@github.com:BorisChiou/pure-css-super-mario.git
+[submodule "Notes"]
+	path = Notes
+	url = https://github.com/mozilla-b2g/notes
